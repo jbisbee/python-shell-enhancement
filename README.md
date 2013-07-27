@@ -36,7 +36,7 @@ export PYTHON_HISTORY_FILE="$HOME/.pythonhistory"
 
 The default shell now has persistent history and tab completion.  Enjoy!
 
-console```
+```console
 jbisbee@beni:~$ python
 Python 2.7.1 (r271:86832, Jul 31 2011, 19:30:53)
 [GCC 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2335.15.00)] on darwin

@@ -19,7 +19,9 @@ else:
         readline.parse_and_bind("tab: complete")
 
     # Enable History File
-    history_file = os.environ.get("PYTHON_HISTORY_FILE", os.path.join(os.environ['HOME'], '.pythonhistory'))
+    history_file = os.environ.get("PYTHON_HISTORY_FILE", 
+                                  os.path.join(os.environ['HOME'], 
+                                               '.pythonhistory'))
 
     if os.path.isfile(history_file):
         readline.read_history_file(history_file)
@@ -28,4 +30,4 @@ else:
 
     atexit.register(readline.write_history_file, history_file)
 
-    print('Interactive mode history and tab completion are enabled.')
+    print('Persistent session history and tab completion are enabled.')

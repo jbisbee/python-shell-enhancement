@@ -1,0 +1,32 @@
+# Pulled these two examples together for the following code
+# http://docs.python.org/2/library/rlcompleter.html#module-rlcompleter
+# http://geoffford.wordpress.com/2009/01/20/python-repl-enhancement/
+
+try:
+    import readline
+    import rlcompleter
+    import atexit
+    import os
+    import sys
+    import platform
+except ImportError as exception:
+    print('Shell Enhancement module problem: {1}').format(exception)
+else:
+    # Enable Tab Completion
+    if sys.platform == 'darwin' and platform.release().split('.')[0] < 12:
+        # differnt bind for Lion and previous, seems to be fixed in Mountain Lion
+        readline.parse_and_bind("bind ^I rl_complete")
+    else:
+        readline.parse_and_bind("tab: complete")
+
+    # Enable History File
+    history_file = os.environ.get("PYTHON_HISTORY_FILE", os.path.join(os.environ['HOME'], '.pythonhistory'))
+
+    if os.path.isfile(history_file):
+        readline.read_history_file(history_file)
+    else:
+        open(history_file, 'a').close()
+
+    atexit.register(readline.write_history_file, history_file)
+
+    print('Interactive mode history and tab completion are enabled.')

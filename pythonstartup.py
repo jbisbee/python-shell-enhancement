@@ -13,7 +13,7 @@ except ImportError as exception:
     print('Shell Enhancement module problem: {1}').format(exception)
 else:
     # Enable Tab Completion
-    if sys.platform == 'darwin' and platform.release().split('.')[0] < 12:
+    if sys.platform == 'darwin' and int(platform.release().split('.')[0]) < 12:
         # differnt bind for Lion and previous, seems to be fixed in Mountain Lion
         readline.parse_and_bind("bind ^I rl_complete")
     else:

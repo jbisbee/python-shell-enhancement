@@ -26,10 +26,10 @@ jbisbee@tacquito:~/src $ git clone https://github.com/jbisbee/python-default-she
 # .bashrc
 
 # path the the newly checked out project. I used ~/src
-export PYTHONSTARTUP='/home/jbisbee/~/src/python-default-shell-enhancement/pythonstartup.py
+export PYTHONSTARTUP="$HOME/src/python-default-shell-enhancement/pythonstartup.py"
 
-# PYTHON\_HISTORY\_FILE default value is "$HOME/.pythonhistory"
-export PYTHON_HISTORY_FILE="/some/path/you/specify"
+# this is the default value, no need to change it if you don't care
+export PYTHON_HISTORY_FILE="$HOME/.pythonhistory"
 ```
 
 **3. Now test it out***

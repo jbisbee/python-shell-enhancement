@@ -1,12 +1,13 @@
-# python-default-shell-enhancement #
+# python-shell-enhancement #
 
 Just a simple python startup script that will add the following to the standard python shell:
 
-* Standard readline history between sessions
-* Basic tab completion
+* Persistent shell history between sessions
+* Tab completion
 
-Yes, I do know about about alternative python shells that support these features.  I just found it
-odd that the default shell didn't out of the box.
+I just found it odd that the default shell didn't out of the box.  Yes, I 
+do know about about alternative python shells that support these features 
+(and many more)
 
 * bpython http://bpython-interpreter.org/
 * iPython http://ipython.org/
@@ -17,7 +18,7 @@ odd that the default shell didn't out of the box.
 
 ```console
 jbisbee@tacquito:~ $ cd ~/src
-jbisbee@tacquito:~/src $ git clone https://github.com/jbisbee/python-default-shell-enhancement.git
+jbisbee@tacquito:~/src $ git clone https://github.com/jbisbee/python-shell-enhancement.git
 ```
 
 **2. Add PYTHONSTARTUP and possibly PYTHON_HISTORY_FILE to your shell**
@@ -26,7 +27,7 @@ jbisbee@tacquito:~/src $ git clone https://github.com/jbisbee/python-default-she
 # .bashrc
 
 # path the the newly checked out project. I used ~/src
-export PYTHONSTARTUP="$HOME/src/python-default-shell-enhancement/pythonstartup.py"
+export PYTHONSTARTUP="$HOME/src/python-shell-enhancement/pythonstartup.py"
 
 # this is the default value, no need to change it if you don't care
 export PYTHON_HISTORY_FILE="$HOME/.pythonhistory"
@@ -81,5 +82,5 @@ http://geoffford.wordpress.com/2009/01/20/python-repl-enhancement/
 
 ### Authors ###
 
-* **Jeff Bisbee**
-* **Geoff Ford**
+* **Jeff Bisbee** http://jbisbee.blogspot.com/
+* **Geoff Ford** http://geoffford.wordpress.com/

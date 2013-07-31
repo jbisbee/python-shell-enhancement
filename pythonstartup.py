@@ -10,7 +10,7 @@ try:
     import sys
     import platform
 except ImportError as exception:
-    print('Shell Enhancement module problem: {1}').format(exception)
+    print('Shell Enhancement module problem: {0}').format(exception)
 else:
     # Enable Tab Completion
     if sys.platform == 'darwin':     # different bind for OSX

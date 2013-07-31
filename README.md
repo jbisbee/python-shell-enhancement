@@ -80,7 +80,10 @@ sys.version                 sys.version_info            sys.warnoptions
 Thanks to Geoff Ford for the orignal code I took from his blog post.
 http://geoffford.wordpress.com/2009/01/20/python-repl-enhancement/
 
+Thanks for Jabba Laci for taking time to report an issue on github.
+
 ### Authors ###
 
 * **Jeff Bisbee** http://jbisbee.blogspot.com/
 * **Geoff Ford** http://geoffford.wordpress.com/
+* **Jabba Laci** https://github.com/jabbalaci - issue on github should have been {0} in string format instead of {1}

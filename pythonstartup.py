@@ -13,7 +13,9 @@ except ImportError as exception:
     print('Shell Enhancement module problem: {0}').format(exception)
 else:
     # Enable Tab Completion
-    if sys.platform == 'darwin':     # different bind for OSX
+    # OSX's bind should only be applied with legacy readline.
+    if sys.platform == 'darwin' and 'libedit' in readline.__doc__:
+
         readline.parse_and_bind("bind ^I rl_complete")
     else:
         readline.parse_and_bind("tab: complete")

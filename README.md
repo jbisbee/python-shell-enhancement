@@ -87,3 +87,4 @@ Thanks for Jabba Laci for taking time to report an issue on github.
 * **Jeff Bisbee** http://jbisbee.blogspot.com/
 * **Geoff Ford** http://geoffford.wordpress.com/
 * **Jabba Laci** https://github.com/jabbalaci - issue on github should have been {0} in string format instead of {1}
+* **Kevin Deldycke** http://kevin.deldycke.com
